@@ -41,14 +41,14 @@ public class MainActivity2 extends AppCompatActivity {
         pieDataSet.setColors(colorArray);
         PieData pieData = new PieData(pieDataSet);
         pieChart.setCenterText("전자 결재");
-        pieChart.setCenterTextSize(25);
+        pieChart.setCenterTextSize(20);
 
         pieChart.setDrawEntryLabels(true);
         pieChart.setUsePercentValues(true);
         pieData.setValueTextSize(15);
         pieChart.getDescription().setEnabled(false);
 
-        pieChart.setHoleRadius(65);
+        pieChart.setHoleRadius(55);
         pieChart.setData(pieData);
         pieChart.invalidate();
 
