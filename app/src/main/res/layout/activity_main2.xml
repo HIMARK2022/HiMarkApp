@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
         android:id="@+id/user"
         android:layout_width="97dp"
@@ -174,4 +175,5 @@
         app:layout_constraintVertical_bias="1.0">
 
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
