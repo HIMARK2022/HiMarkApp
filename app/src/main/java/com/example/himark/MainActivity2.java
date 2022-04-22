@@ -28,7 +28,7 @@ public class MainActivity2 extends AppCompatActivity {
     private TextView user,authority,username,duty,dept;
     private Button rBtn,fBtn,bBtn,btnPieChart;
     PieChart pieChart;
-    int[] colorArray = new int[]{Color.RED,Color.BLUE,Color.GREEN};
+    int[] colorArray = new int[]{Color.rgb(78, 115, 223), Color.rgb(28, 200, 138), Color.rgb(133, 135, 150)};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +40,15 @@ public class MainActivity2 extends AppCompatActivity {
         PieDataSet pieDataSet = new PieDataSet(data1(),"전자결재");
         pieDataSet.setColors(colorArray);
         PieData pieData = new PieData(pieDataSet);
-        pieChart.setDrawEntryLabels(true);
-        pieChart.setUsePercentValues(true);
-        pieData.setValueTextSize(30);
-        pieChart.getDescription().setEnabled(false);
         pieChart.setCenterText("전자 결재");
         pieChart.setCenterTextSize(25);
-        pieChart.setHoleRadius(30);
+
+        pieChart.setDrawEntryLabels(true);
+        pieChart.setUsePercentValues(true);
+        pieData.setValueTextSize(15);
+        pieChart.getDescription().setEnabled(false);
+
+        pieChart.setHoleRadius(65);
         pieChart.setData(pieData);
         pieChart.invalidate();
 
@@ -136,7 +138,7 @@ public class MainActivity2 extends AppCompatActivity {
         ArrayList<PieEntry> datavalue = new ArrayList<>();
 
         datavalue.add(new PieEntry(30,"대기"));
-        datavalue.add(new PieEntry(50,"완료"));
+        datavalue.add(new PieEntry(50,"승인"));
         datavalue.add(new PieEntry(20,"반려"));
 
         return datavalue;

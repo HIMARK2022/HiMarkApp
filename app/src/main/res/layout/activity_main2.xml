@@ -111,8 +111,8 @@
         android:id="@+id/rBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
         android:text="대기"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -122,33 +122,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
+        android:layout_marginTop="45dp"
         android:text="완료"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rBtn"
-        app:layout_constraintTop_toBottomOf="@+id/authority"
+        app:layout_constraintLeft_toRightOf="@+id/rBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.241" />
 
     <Button
         android:id="@+id/bBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="45dp"
         android:text="반려"
-        app:layout_constraintBaseline_toBaselineOf="@+id/fBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.743"
-        app:layout_constraintStart_toEndOf="@+id/rBtn" />
+        app:layout_constraintLeft_toRightOf="@+id/fBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pieChart"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="149dp"
+        android:layout_marginBottom="70dp"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/authority"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.103" >
+
+        <FrameLayout
+            android:id="@+id/Main_Frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </FrameLayout>
+    </com.github.mikephil.charting.charts.PieChart>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavi"
@@ -162,16 +170,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation" />
 
-    <FrameLayout
-        android:id="@+id/Main_Frame"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
