@@ -10,7 +10,7 @@
         android:id="@+id/item_cardview"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:contentPadding="3dp">
@@ -52,7 +52,8 @@
                 android:padding="10dp"
                 android:text="분류"
                 android:textAlignment="viewStart"
-                android:textColor="#0C0C0C" />
+                android:textColor="#0C0C0C"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/manager"
@@ -60,31 +61,33 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/category"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="-32dp"
+                android:layout_marginTop="-37dp"
 
-                android:layout_marginEnd="47dp"
+                android:layout_marginEnd="38dp"
                 android:layout_toStartOf="@+id/category"
                 android:maxLines="2"
                 android:padding="10dp"
                 android:text="승인자"
                 android:textAlignment="viewStart"
-                android:textColor="#0C0C0C" />
+                android:textColor="#0C0C0C"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/rdate"
-                android:layout_width="325dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/manager"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="7dp"
 
-                android:layout_marginTop="9dp"
-                android:layout_marginEnd="29dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="36dp"
                 android:maxLines="2"
                 android:padding="10dp"
                 android:text="요청일"
                 android:textAlignment="viewStart"
-                android:textColor="#0C0C0C" />
+                android:textColor="#0C0C0C"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/state"
@@ -93,36 +96,37 @@
                 android:layout_above="@+id/category"
 
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="80dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="1dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="-3dp"
                 android:layout_toEndOf="@+id/title"
                 android:maxLines="2"
                 android:padding="10dp"
                 android:text="상태"
                 android:textAlignment="viewStart"
-                android:textColor="#2196F3"
+                android:textColor="@color/red"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="47dp"
+                android:layout_height="36dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="-3dp"
+                android:layout_marginBottom="18dp"
                 android:layout_toStartOf="@+id/rdate"
-                app:srcCompat="@drawable/ic_baseline_access_time_24" />
+                android:src="@drawable/ic_baseline_access_time_24" />
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="41dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="7dp"
-                android:layout_marginBottom="62dp"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginBottom="56dp"
                 android:layout_toStartOf="@+id/manager"
-                app:srcCompat="@drawable/ic_baseline_person_24" />
+                android:src="@drawable/ic_baseline_person_24" />
 
         </RelativeLayout>
 
